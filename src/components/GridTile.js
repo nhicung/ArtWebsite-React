@@ -88,7 +88,7 @@ const useStyles = makeStyles((theme) => ({
   closeButton: {
     position: 'absolute',
     right: '15%',
-    top:  '20%',
+    top: '20%',
     color: theme.palette.grey[500],
   },
 
@@ -135,8 +135,7 @@ export default function GridTile(props) {
         />
       </div>
       <Modal
-        aria-labelledby="transition-modal-title"
-        // aria-describedby="transition-modal-description"
+        aria-labelledby='transition-modal-title'
         className={classes.modal}
         open={open}
         onClose={handleClose}
@@ -157,13 +156,13 @@ export default function GridTile(props) {
                 alt={props.tile.title}
                 //maxHeight="300px"
                 //width= '100%'
-                id="transition-modal-title" />
+                id='transition-modal-title' />
             </div>
             <div className={classes.description}>
-              <h5>Name:</h5>
-              <p>Type of Paint: </p>
+              <h5>Name: {props.tile.title}</h5>
+              <p>Type of Paint: {props.tile.paint}</p>
               <p>Type of Paper: </p>
-              <p>Inspired by: </p>
+              <p>Inspired by: {props.tile.inspire}</p>
             </div>
           </div>
         </Fade>

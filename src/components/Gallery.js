@@ -17,13 +17,9 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     height: 950,
     padding: 5,
-    // '&:hover':{
-    //   color: '#e6e6e6',
-    //   cursor: 'pointer',
-    // }
   },
-  
-  
+
+
 }));
 
 export default function Gallery() {
@@ -34,7 +30,7 @@ export default function Gallery() {
       <GridList cellHeight={25} className={classes.gridList} cols={3}>
         {tileData.map((tile) => (
           <GridTile
-          tile={tile}
+            tile={tile}
           />
         ))}
       </GridList>

@@ -5,7 +5,7 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import Button from '@material-ui/core/Button';
 import tileData from './title';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,17 +35,13 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(4),
       fontSize: '16px',
       color: '#665544',
-      textDecoration: 'underline',
+      textDecoration: 'none',
       '&:hover': {
         color: '#d4d0c6',
       }
     },
   },
 }));
-
-// function handleClick() {
-//   window.open("/gallery");
-// }
 
 export default function SingleLineGridList(props) {
   const classes = useStyles();
@@ -68,14 +64,14 @@ export default function SingleLineGridList(props) {
       </GridList>
       <div className={classes.moreButton}>
         <Button
-          component={Link} to={process.env.PUBLIC_URL + "/gallery"} 
-          size="small"
-          variant="outlined"
+          component={Link} to={process.env.PUBLIC_URL + '/gallery'} 
+          size='small'
+          variant='outlined'
           color='#665544'
           onClick={() => {
             window.scrollTo(0, 0);
           }}>
-          More Painting
+          Show Gallery
           </Button>
       </div>
     </div>

@@ -23,10 +23,10 @@ const Styles = styled.div`
 		}
 	}
 	.card-deck{
-	width: 100%;
-	height: 50%;
-	margin: auto;
-	padding-top: 40px;
+		width: 100%;
+		height: 50%;
+		margin: auto;
+		padding-top: 40px;
 	}
 	.frame {
     height: 100%,
@@ -46,7 +46,7 @@ export const Product = (props) => (
 	<Styles>
 		<div className='root'>
 			<div className='intro'>
-				<p> Handmade products by CungDesign. Message on Facebook <a className='email' href="https://l.facebook.com/l.php?u=https%3A%2F%2Fm.me%2Fcungarttherapy%3Ffbclid%3DIwAR0Mt5w8mDb4qYW-xQ4W2_t-JFAi7E8mrAMsn4uERiT2X5F3UcVjG01V53I&h=AT0rWirmQWBBlpR572S5UVPx3MPaX8ZbZfRBoPzcC2uGRua3rjIRvXTNPURF7DC8ROStgIgUkyR0PzUsgK0DF_6XkNCBnym0-Pa9Ednmy9juEUOnvDspacC9A6AZvjJw959UANqDdI3mwXkAEL_Jpwi7qxI" target="_blank" > CungDesign </a> or email <a className='email' href={"mailto:" + props.email}>cungdesign@gmail.com </a> if interested.</p>
+				<p> Handmade products by CungDesign. Message on Facebook <a className='email' href='https://l.facebook.com/l.php?u=https%3A%2F%2Fm.me%2Fcungarttherapy%3Ffbclid%3DIwAR0Mt5w8mDb4qYW-xQ4W2_t-JFAi7E8mrAMsn4uERiT2X5F3UcVjG01V53I&h=AT0rWirmQWBBlpR572S5UVPx3MPaX8ZbZfRBoPzcC2uGRua3rjIRvXTNPURF7DC8ROStgIgUkyR0PzUsgK0DF_6XkNCBnym0-Pa9Ednmy9juEUOnvDspacC9A6AZvjJw959UANqDdI3mwXkAEL_Jpwi7qxI' target='_blank' rel='noopener noreferrer' > CungDesign </a> or email <a className='email' href={'mailto:' + props.email}>cungdesign@gmail.com </a> if interested.</p>
 				<p> Products are also provided at workshops. </p>
 			</div>
 			<CardDeck>
@@ -59,7 +59,7 @@ export const Product = (props) => (
 					<Card.Body>
 						<Card.Title>{tileData[1].title}</Card.Title>
 						<Card.Text>
-							<p>Product Description:</p>
+							<p>Product Description: {tileData[1].description} </p>
 							<p>Price:</p>
 							<p>Product ID : {tileData[1].id}</p>
 						</Card.Text>
@@ -74,7 +74,7 @@ export const Product = (props) => (
 					<Card.Body>
 						<Card.Title>{tileData[2].title}</Card.Title>
 						<Card.Text>
-							<p>Product Description:</p>
+							<p>Product Description: {tileData[2].description}</p>
 							<p>Price:</p>
 							<p>Product ID : {tileData[2].id}</p>
 						</Card.Text>
@@ -89,7 +89,7 @@ export const Product = (props) => (
 					<Card.Body>
 						<Card.Title>{tileData[3].title}</Card.Title>
 						<Card.Text>
-							<p>Product Description:</p>
+							<p>Product Description: {tileData[3].description}</p>
 							<p>Price:</p>
 							<p>Product ID : {tileData[3].id}</p>
 						</Card.Text>
@@ -98,15 +98,15 @@ export const Product = (props) => (
 				<Card>
 					<div className='frame'>
 						<Card.Img variant='top'
-							src={tileData[4].img}
-							alt={tileData[4].title} />
+							src={tileData[12].img}
+							alt={tileData[12].title} />
 					</div>
 					<Card.Body>
-						<Card.Title>{tileData[4].title}</Card.Title>
+						<Card.Title>{tileData[12].title}</Card.Title>
 						<Card.Text>
-							<p>Product Description:</p>
+							<p>Product Description: {tileData[12].description}</p>
 							<p>Price:</p>
-							<p>Product ID : {tileData[4].id}</p>
+							<p>Product ID : {tileData[12].id}</p>
 						</Card.Text>
 					</Card.Body>
 				</Card>
@@ -121,7 +121,7 @@ export const Product = (props) => (
 					<Card.Body>
 						<Card.Title>{tileData[5].title}</Card.Title>
 						<Card.Text>
-							<p>Product Description:</p>
+							<p>Product Description: {tileData[5].description}</p>
 							<p>Price:</p>
 							<p>Product ID : {tileData[5].id}</p>
 						</Card.Text>
@@ -130,15 +130,15 @@ export const Product = (props) => (
 				<Card>
 					<div className='frame'>
 						<Card.Img variant='top'
-							src={tileData[12].img}
-							alt={tileData[12].title} />
+							src={tileData[8].img}
+							alt={tileData[8].title} />
 					</div>
 					<Card.Body>
-						<Card.Title>{tileData[12].title}</Card.Title>
+						<Card.Title>{tileData[8].title}</Card.Title>
 						<Card.Text>
-							<p>Product Description:</p>
+							<p>Product Description: {tileData[8].description}</p>
 							<p>Price:</p>
-							<p>Product ID : {tileData[12].id}</p>
+							<p>Product ID : {tileData[8].id}</p>
 						</Card.Text>
 					</Card.Body>
 				</Card>
@@ -152,7 +152,7 @@ export const Product = (props) => (
 					<Card.Body>
 						<Card.Title>{tileData[10].title}</Card.Title>
 						<Card.Text>
-							<p>Product Description:</p>
+							<p>Product Description:{tileData[10].description}</p>
 							<p>Price:</p>
 							<p>Product ID : {tileData[10].id}</p>
 						</Card.Text>
@@ -162,15 +162,15 @@ export const Product = (props) => (
 				<Card>
 					<div className='frame'>
 						<Card.Img variant='top'
-							src={tileData[6].img}
-							alt={tileData[6].title} />
+							src={tileData[4].img}
+							alt={tileData[4].title} />
 					</div>
 					<Card.Body>
-						<Card.Title>{tileData[6].title}</Card.Title>
+						<Card.Title>{tileData[4].title}</Card.Title>
 						<Card.Text>
-							<p>Product Description:</p>
+							<p>Product Description: {tileData[4].description}</p>
 							<p>Price:</p>
-							<p>Product ID : {tileData[6].id}</p>
+							<p>Product ID : {tileData[4].id}</p>
 						</Card.Text>
 					</Card.Body>
 				</Card>

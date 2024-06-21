@@ -14,7 +14,7 @@ function TabPanel(props) {
 
   return (
     <div
-      role="tabpanel"
+      role='tabpanel'
       hidden={value !== index}
       id={`vertical-tabpanel-${index}`}
       aria-labelledby={`vertical-tab-${index}`}
@@ -64,13 +64,7 @@ const useStyles = makeStyles((theme) => ({
     width: 150,
   },
 
-  // tab: {
-  //   padding: '12px 25px',
-  //   textAlign:'justify',
-  // },
-
   content: {
-    // flexGrow: 1,
     width: '80%',
     backgroundColor: theme.palette.background.default,
     padding: theme.spacing(3),
@@ -88,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
 
   text: {
     paddingBottom: 80,
-    minHeight:'300px',
+    minHeight: '300px',
   },
   emphasize: {
     fontWeight: 'bold',
@@ -109,17 +103,17 @@ export default function VerticalTabs() {
       <CssBaseline />
       <ThemeProvider theme={theme}>
         <Tabs
-          indicatorColor="primary"
-          orientation="vertical"
-          variant="scrollable"
+          indicatorColor='primary'
+          orientation='vertical'
+          variant='scrollable'
           value={value}
           onChange={handleChange}
-          aria-label="Vertical tabs example"
+          aria-label='Vertical tabs example'
           className={classes.tabs}>
 
-          <Tab className={classes.tab} label="About Us" {...a11yProps(0)} />
-          <Tab className={classes.tab} label="About Workshop" {...a11yProps(1)} />
-          <Tab className={classes.tab} label="Inspiration" {...a11yProps(2)} />
+          <Tab className={classes.tab} label='About Us' {...a11yProps(0)} />
+          <Tab className={classes.tab} label='About Workshop' {...a11yProps(1)} />
+          <Tab className={classes.tab} label='Inspiration' {...a11yProps(2)} />
         </Tabs>
       </ThemeProvider>
       <main className={classes.content}>
@@ -128,12 +122,12 @@ export default function VerticalTabs() {
           <div className={classes.info}>
             <div className={classes.setImg}>
               <img className={classes.img}
-                alt="600*450"
-                src="images/Aboutus.jpg"
+                alt='600*450'
+                src='images/Aboutus.jpg'
               />
               <img className={classes.img}
-                alt="600*450"
-                src="images/AboutUs3.jpg"
+                alt='600*450'
+                src='images/AboutUs3.jpg'
               />
             </div>
             <div className={classes.text}>
@@ -151,12 +145,12 @@ export default function VerticalTabs() {
           <div className={classes.info}>
             <div className={classes.setImg}>
               <img className={classes.img}
-                alt="600*450"
-                src="images/Workshop1.jpg"
+                alt='600*450'
+                src='images/Workshop1.jpg'
               />
               <img className={classes.img}
-                alt="600*450"
-                src="images/Workshop2.jpg"
+                alt='600*450'
+                src='images/Workshop2.jpg'
               />
             </div>
 
@@ -175,12 +169,12 @@ export default function VerticalTabs() {
           <div className={classes.info}>
             <div className={classes.setImg}>
               <img className={classes.img}
-                alt="600*450"
-                src="images/Inspiration2.jpg"
+                alt='600*450'
+                src='images/Inspiration2.jpg'
               />
               <img className={classes.img}
-                alt="600*450"
-                src="images/PlayingwPaint.jpg"
+                alt='600*450'
+                src='images/PlayingwPaint.jpg'
               />
             </div>
             <div className={classes.text}>

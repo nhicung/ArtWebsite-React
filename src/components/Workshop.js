@@ -26,9 +26,11 @@ const Style = styled.div`
 	flex-direction: row;
 	padding: 2%;
 }
+
 .figure {
 	padding: 5%;
 }
+
 .description {
 	width: 50%;
 	color: #665544;
@@ -51,7 +53,6 @@ const Style = styled.div`
 	bacground-color: #665544;
 }
 `
-
 export const Workshop = (props) => (
 	<Style>
 		<div className='title'>
@@ -65,11 +66,11 @@ export const Workshop = (props) => (
 					height={250} />
 
 				<div className='description'>
-					<h4>Ancient Quarter</h4>
+					<h4>{tileData[5].title}</h4>
 					<hr color='#665544'></hr>
-					<p>Description: </p>
-					<p>Time: </p>
-					<p>Place: </p>
+					<p> {tileData[5].description} </p>
+					<p>Time: {tileData[5].time}</p>
+					<p>Place: {tileData[5].place} </p>
 				</div>
 			</div>
 			<div className='event'>
@@ -79,15 +80,16 @@ export const Workshop = (props) => (
 					width={200}
 					height={250} />
 				<div className='description'>
-					<h4>Lotus Flower</h4>
+					<h4>{tileData[3].title}</h4>
 					<hr color='#665544'></hr>
-					<p>Description: </p>
-					<p>Time: </p>
-					<p>Place: </p>
+					<p> {tileData[3].description} </p>
+					<p>Time: {tileData[3].time}</p>
+					<p>Place: {tileData[3].place} </p>
 				</div>
 			</div>
 		</Container>
 
 		<SubmitForm></SubmitForm>
+		
 	</Style>
 )
